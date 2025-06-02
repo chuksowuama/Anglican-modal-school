@@ -1,0 +1,168 @@
+nav {
+  background-color: white;
+  font-weight: 600;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding: 0 2rem;
+}
+.Link{
+  color: var(--lastColor);
+  text-decoration: none;
+  display:inline-block;
+}
+.upper-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.topNav{
+  display: none;
+}
+nav hr {
+  width: 98%;
+  height: 1px;
+  margin: auto;
+  background-color: black;
+}
+.bottom-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.7rem;
+}
+nav .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .logo h1{
+  color: var(--secondaryColor);
+}
+nav img {
+  width: 100px;
+  height: 100px;
+}
+.navcon {
+  display: none;
+}
+
+#myid{
+  animation-name: navigation;
+  animation-duration: 0.5s;
+  transition: .4s ease-in-out;
+}
+@keyframes navigation {
+  from{
+    top: -100%;
+  }
+  to{
+    top: 0;
+  }
+}
+
+
+.navmenu {
+  position: relative;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+}
+.navmenu li {
+  cursor: pointer;
+}
+.dropNav {
+  list-style: none;
+  position: absolute;
+  top: 30px;
+  background-color: var(--tertiaryColor);
+  box-shadow: 0 0 2px black;
+}
+.dropNav .dropLink  {
+  color:var(--lastColor);
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+.dropNav .dropLink:hover {
+  background-color: var(--quaternaryColor);
+  color: var(--quinartcolor);
+}
+.socials {
+  display: flex;
+  gap: 1.2rem;
+}
+.socials i {
+  font-size: 1.3rem;
+  color:var(--lastColor);
+  cursor: pointer;
+}
+.socials i:hover {
+  color:grey;
+}
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 1rem 0;
+    height: 130px;
+  }
+  .navmenu {
+    position: absolute;
+    width: 60%;
+    height: 100vh;
+    right: -100%;
+    gap: 1.3rem;
+    top: 105px;
+    background-color: var(--quinartcolor);
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5rem 1rem;
+    transition: 0.4s ease-in-out;
+  }
+  nav .logo {
+    position: absolute;
+    left: 30px;
+    bottom: 5px;
+  }
+  nav hr {
+    position: absolute;
+    top: 3px;
+    margin-top: 30px;
+    width: 90%;
+    left: 20px;
+  }
+  .navmenuActive {
+    right: 0;
+  }
+  .navcon {
+    display: block;
+    position: absolute;
+    right: 30px;
+    bottom: 45px;
+    cursor: pointer;
+  }
+  .navmenu li {
+    width: 100%;
+  }
+  .dropNav {
+    list-style: none;
+    position: static;
+    top: 30px;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .dropNav .Link {
+    border: none;
+    color: black;
+    padding: 0.2rem 0.3rem;
+    cursor: pointer;
+  }
+  .socials {
+    display: none;
+  }
+}

@@ -1,0 +1,60 @@
+:root {
+  --primarycolor: #7851a9;
+  --secondaryColor: #420678;
+  --tertiaryColor: #98ff98;
+  --quaternaryColor: #228b22;
+  --quinartcolor: #e6e6fa;
+  --Header-font: "Merriweather Sans", sans-serif;
+  --Header-font-weight: 400;
+  --para-font: "PT Serif", serif;
+  --para-font-weight: 400;
+  --lastColor: #222;
+}
+.carousel-container{
+    padding: 1.3rem;
+    height: 100%;
+    margin:auto ;
+    padding: 1.9rem 0.5rem;
+}
+.mySwiper{
+    padding: 1.9rem 0.5rem;
+}
+.carousel-item{
+    box-shadow:  0 0 5px var(--lastColor);
+    height: 550px;
+}
+.carousel-item img{
+    width: 100%;
+    object-fit: cover;
+    height: 450px;
+}
+.swiper-button-next, .swiper-button-prev{
+    color: var(--quaternaryColor);
+}
+.news-info{
+    text-align: start;
+    height: 40%;
+    padding: 10px;
+    line-height: 1.7rem;
+  }
+  .news-info h3 a{
+    text-transform: uppercase;
+    word-spacing: 0.2rem;
+    text-decoration: none;
+    font-weight: bolder;
+    color:var(--quaternaryColor);
+  }
+  .news-info h3 a:hover{
+    color:var(--tertiaryColor);
+  }
+  .news-info i{
+    padding-right: 10px;
+    color:var(--quaternaryColor);
+    font-size: 0.8rem;
+  }
+  .news-info i p{
+    display: inline-block;
+    margin-left: 0.3rem;
+    margin-right: 0.1rem;
+    color: black;
+  }

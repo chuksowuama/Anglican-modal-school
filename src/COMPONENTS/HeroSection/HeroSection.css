@@ -1,0 +1,137 @@
+:root {
+  --primarycolor: #7851a9;
+  --secondaryColor: #420678;
+  --tertiaryColor: #98ff98;
+  --quaternaryColor: #228b22;
+  --quinartcolor: #e6e6fa;
+  --Header-font: "Merriweather Sans", sans-serif;
+  --Header-font-weight: 400;
+  --para-font: "PT Serif", serif;
+  --para-font-weight: 400;
+}
+.herosection {
+  height: 80vh;
+  width: 100%;
+  margin-top: 100px;
+  position: relative;
+  text-align: center;
+}
+.herosection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.herosection::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(85, 63, 136, 0.5);
+  top: 0;
+  left: 0;
+}
+.heroContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 70%;
+}
+.heroTitle {
+  font-size: 3.5rem;
+  color: white;
+  text-align: center;
+}
+.hero-sub {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  margin: 1rem 0;
+}
+.heroSub-span{
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  margin: 1rem 0
+}
+.heroCTA {
+  padding: 0.7rem 1.2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: var(--quaternaryColor);
+  border: none;
+  outline: transparent;
+  color: var(--quinartcolor);
+  margin-top: 30px;
+  text-decoration: none;
+}
+.heroCTA:hover {
+  background-color: var(--tertiaryColor);
+  color: var(--quaternaryColor);
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .heroContent {
+    top: 35%;
+    transform: translate(-50%, -25%);
+    width: 100%;
+    text-align: start;
+    padding-left: 1.1rem;
+  }
+  .heroTitle {
+    font-size: 2rem;
+    text-align: start;
+  }
+  .hero-sub {
+    font-size: 1.2rem;
+    color: white;
+    text-align: start;
+    margin: 1rem 0;
+  }
+  .heroCTA {
+    padding: 0.4rem 1rem;
+    font-size: 1.1rem;
+    margin-top: 0.4rem;
+  }
+}
+
+/* this is the Css hero section for other parts of the website,
+i had to change it because other pages except the fro section part are the same */
+.Otherherosection{
+  height: 50vh;
+  width: 100%;
+  margin-top: 100px;
+  position: relative;
+  text-align: center;
+}
+.Otherherosection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Otherherosection::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(85, 63, 136, 0.5);
+  top: 0;
+  left: 0;
+}
+.otherheroContent{
+  position: absolute;
+  top: 55%;
+  left: 30px;
+  text-align: start;
+  padding-left: 1.1rem;
+  z-index: 1;
+}
+.removeherobutton{
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .Otherherosection{
+    height: 30vh;
+  }
+}

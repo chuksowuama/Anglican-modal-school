@@ -1,0 +1,67 @@
+:root {
+  --primarycolor: #7851a9;
+  --secondaryColor: #420678;
+  --tertiaryColor: #98ff98;
+  --quaternaryColor: #228b22;
+  --quinartcolor: #e6e6fa;
+  --Header-font: "Merriweather Sans", sans-serif;
+  --Header-font-weight: 400;
+  --para-font: "PT Serif", serif;
+  --para-font-weight: 400;
+  --lastColor: #222;
+}
+.featured-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0.3rem;
+}
+.featured {
+  padding: 40px;
+  position: relative;
+}
+.featured.one {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  background: url("../assets/stem.webp") center/cover no-repeat;
+}
+.featured.two{
+    width: 100%;
+    height: 300px;
+    background: url("../assets/art.jpg") center/cover no-repeat;
+}
+.featured.three{
+    width: 100%;
+    height: 300px;
+    background: url("../assets/outsideLeaning.webp") center/cover no-repeat;
+}
+.featured.four{
+    width: 100%;
+    height: 300px;
+    background: url("../assets/socialLearning.jpg") center/cover no-repeat;
+}
+.featured-details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(85, 63, 136, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding: 0 1.4rem;
+    color: white;
+    line-height: 1.5rem;
+    transition: all .6s ease-in-out;
+    opacity: 0;
+}
+.featured-details:hover{
+  opacity: 1;
+}
+
+.featured-details h1{
+    margin-bottom: 30px;
+}
+

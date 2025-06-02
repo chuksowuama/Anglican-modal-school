@@ -1,0 +1,37 @@
+:root {
+    --primarycolor: #7851a9;
+    --secondaryColor: #420678;
+    --tertiaryColor: #98ff98;
+    --quaternaryColor: #228b22;
+    --quinartcolor: #e6e6fa;
+    --Header-font: "Merriweather Sans", sans-serif;
+    --Header-font-weight: 400;
+    --para-font: "PT Serif", serif;
+    --para-font-weight: 400;
+    --lastColor: #222;
+  }
+.subnav{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+}
+.link{
+    text-decoration: none;
+    padding: 1.5rem;
+    display: block;
+    background-color: var(--tertiaryColor);
+    box-shadow: 0 0 2px var(--lastColor);
+    font-size: 1.2rem;
+    color: var(--lastColor);
+    cursor:pointer;
+}
+.subnav .link.actives{
+    background-color: var(--quaternaryColor);
+    color: var(--quinartcolor);
+}
+@media screen and (max-width: 600px) {
+    .subnav .link{
+        padding: .3rem;
+    }
+}

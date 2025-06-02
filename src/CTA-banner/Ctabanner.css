@@ -1,0 +1,45 @@
+.Cta-banner {
+    position: relative;
+  border: 2px solid black;
+  grid-template-columns: repeat(2, 1fr);
+  height: 150px;
+  background: url("../assets/pileofbooks.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+.Cta-banner::after {
+ content: "";
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background-color: rgb(85, 63, 136, 0.5);
+ top: 0;
+ left: 0;
+}
+.Cta-banner h1{
+  z-index: 1;
+  color: white;
+}
+.Cta-banner img {
+  width: 100%;
+  height: 100%;
+}
+.Cta-button{
+ z-index: 1;
+ width: 200px;
+ padding: 1.2rem ;
+ border: none;
+ background-color: var(--quaternaryColor);
+ color: white;
+ cursor: pointer;
+ font-size: 1.2rem;
+ transition: all 0.3s ease-in-out;
+}
+.Cta-button:hover{
+    box-shadow: 0 0 5px black;
+    background-color: var(--tertiaryColor);
+    color: var(--lastcolor);
+}

@@ -1,0 +1,91 @@
+:root {
+  --logofont-family: "Bebas Neue", serif;
+  --textTitlefont-family: "Merriweather", serif;
+  --ParagraphFont-family: "Poppins", serif;
+  --textTitleFont: 1.9rem;
+  --ParagraphFontSize: 1.2rem;
+  --primaryColor: #fff;
+  --secondaryColor: darkgreen;
+  --buttonTextColor: #fff;
+  --buttonbgColor: darkgreen;
+  --lastColor: #222;
+}
+
+.FooterContainer {
+  background-color: #222;
+  padding: 2.4rem;
+}
+.topfooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 7.7rem;
+}
+.Footerlogo{
+  color: var(--primaryColor);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: var(--logofont-family);
+  font-size: 1.4rem;
+}
+.topfooter .socials {
+    margin-left: 53rem;
+    width: 50%;
+    white-space: nowrap;
+}
+.socials a {
+  font-size: 1.4rem;
+  margin: 0 0.4rem;
+  color: var(--primaryColor);
+}
+.socials a:hover{
+    color: grey;
+}
+.bottomfooter {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.linkRow {
+  flex-direction: column;
+  padding-left: 7.7rem;
+  width: 25%;
+}
+.linkRow h3 {
+  font-size: 1.4rem;
+  padding: 0.2rem;
+  color: var(--primaryColor);
+}
+.linkRow a {
+  display: block;
+  padding: 0.2rem;
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+.linkRow a:hover {
+  color: grey;
+}
+@media screen and (max-width: 600px) {
+  .FooterContainer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .topfooter {
+    gap: 0.4rem;
+    padding: 2rem 2.7rem;
+    width: 100%;
+    gap: 1.4rem;
+  }
+  .topfooter .socials {
+    margin-left: 0;
+}
+  .bottomfooter {
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+  .linkRow {
+    padding-left: 0.7rem;
+    width: 40%;
+  }
+  .linkRow a{
+    padding: 0.4rem 0;
+  }
+}

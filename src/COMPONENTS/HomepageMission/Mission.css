@@ -1,0 +1,87 @@
+:root {
+    --primarycolor: #7851a9;
+    --secondaryColor: #420678;
+    --tertiaryColor: #98ff98;
+    --quaternaryColor: #228b22;
+    --quinartcolor: #e6e6fa;
+    --Header-font: "Merriweather Sans", sans-serif;
+    --Header-font-weight: 400;
+    --para-font: "PT Serif", serif;
+    --para-font-weight: 400;
+    --lastColor: #222;
+  }
+  
+.MissionContainer {
+    margin-top: 1.5rem;
+    padding: 1.3rem;
+}
+.mission {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+}
+.missionImage img{
+    width: 100%;
+    height: 100%;
+}
+/* .mission-writeUp{
+} */
+.mission-writeUp p{
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    text-align: start;
+}
+.mission-writeUp ul{
+    font-size: 1rem;
+    line-height: 1.6rem;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+.progress{
+    padding: 1.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.progress li{
+  box-shadow: 0 0 10px black;
+    display: flex;
+    color: var(--lastColor);
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1.2rem;
+    border-radius: 10px;
+    text-align: center;
+    transform: all 0.3s ease-in-out;
+}
+.progress li:hover{
+    background-color: var(--tertiaryColor);
+    color: var(--lastColor);
+    box-shadow: 0 0 5px var(--lastColor);
+}
+.progress li span:nth-child(1){
+    font-size: 2.5rem;
+}
+@media screen and (max-width: 600px) {
+    .mission {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .mission-writeUp p{
+        font-size: 1.2rem;
+    }
+      .progress{
+        padding: 1.5rem 0;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+    .progress li{
+        padding: 1.2rem;
+        gap: 0.5rem;
+        box-shadow: none;
+    }
+}

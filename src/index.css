@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-family: var(--para-font);
+}
+
+:root {
+  --primarycolor: #7851a9;
+  --secondaryColor: #420678;
+  --tertiaryColor: #98ff98;
+  --quaternaryColor: #228b22;
+  --quinartcolor: #e6e6fa;
+  --Header-font: "Merriweather Sans", sans-serif;
+  --Header-font-weight: 400;
+  --para-font: "PT Serif", serif;
+  --para-font-weight: 400;
+  --lastColor: #222;
+}
+.Title{
+  padding-bottom: 1rem;
+  color: var(--quaternaryColor);
+}
+.container{
+  padding: 1.3rem;
+}
+.grid-Layout{
+  display: grid;
+  grid-template-columns:1.2fr 4fr;
+  padding: 3rem;
+  gap: 3.5rem;
+}
+.aside{
+
+}
+.main{
+
+}
+.main div{
+}
+@media screen and (max-width: 600px) {
+  .grid-Layout{
+    grid-template-columns:1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  
+}

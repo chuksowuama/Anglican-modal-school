@@ -1,0 +1,53 @@
+:root {
+  --logofont-family: "Bebas Neue", serif;
+  --textTitlefont-family: "Merriweather", serif;
+  --ParagraphFont-family: "Poppins", serif;
+  --textTitleFont: 1.9rem;
+  --ParagraphFontSize: 1.2rem;
+  --primaryColor: #fff;
+  --secondaryColor: darkgreen;
+  --buttonTextColor: #fff;
+  --buttonbgColor: darkgreen;
+  --lastColor: #222;
+}
+.TestimonialContainer{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.testimonialcont {
+  position: relative;
+  display: flex;
+  padding: 0.5rem 0.7rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.testimonialcont img {
+  /* position: absolute; */
+  width: 80px;
+  height: 80px;
+  left: 35%;
+  border-radius: 50%;
+  z-index: 8;
+  box-shadow: 0 0 10px black;
+}
+.testDetails {
+  margin-top: 50px;
+  background: var(--lastColor);
+  color: var(--primaryColor);
+  text-align: center;
+  /* padding: 2.4rem 0 0 0; */
+  box-shadow: 0 0 5px black;
+}
+@media screen and (max-width: 600px) {
+  .TestimonialContainer{
+    grid-template-columns:1fr;
+    gap: 0;
+  }
+  .testimonialcont {
+    position: relative;
+    display: flex;
+    padding: 0.5rem 0.7rem;
+    align-items: center;
+    justify-content:center;
+  }
+}

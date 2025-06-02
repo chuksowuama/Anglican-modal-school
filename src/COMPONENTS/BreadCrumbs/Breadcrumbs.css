@@ -1,0 +1,12 @@
+.Breadcrumbs{
+    padding: 1.2rem 0.5rem;
+    background-color:grey;
+}
+.breaLinks{
+  text-decoration: none;
+  color: var(--quinartcolor);
+  font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+
+}
