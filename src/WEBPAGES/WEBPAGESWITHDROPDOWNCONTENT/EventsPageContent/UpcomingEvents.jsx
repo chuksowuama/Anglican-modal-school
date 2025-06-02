@@ -1,5 +1,5 @@
 import React from 'react'
-import "./EventspageContents.css"
+import "./Eventspagecontents.css"
 import { upcomingEvents } from '../../../assets/dataAssets'
 
 const UpcomingEvents = () => {
