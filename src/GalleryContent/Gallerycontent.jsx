@@ -1,5 +1,5 @@
 import React from 'react'
-import "./GalleryContent.css"
+import "./Gallerycontent.css"
 import { galleryImages } from '../assets/dataAssets'
 
 const Gallerycontent = () => {
